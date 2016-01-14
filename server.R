@@ -6,13 +6,13 @@ shinyServer(function(input, output) {
   
 output$Septiembre<-renderPrint({
   y<-input$select
-  paste(y,round(a_matrix_Septiembre[y], digits=4))
+  paste(y,round(a_matrix_Septiembre[y,y], digits=4))
   
 })
 
 output$Septiembre2<-renderPrint({
   y<-input$select2
-  paste(y, round(a_matrix_Septiembre[y], digits=4))
+  paste(y, round(a_matrix_Septiembre[y,y], digits=4))
   
 })
 
